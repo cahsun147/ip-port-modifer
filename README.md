@@ -118,7 +118,7 @@ If you want to use `ip-port-modifer` command globally from anywhere:
 1. Make a shell script (Linux/macOS):
 
    ```bash
-   echo -e '#!/bin/bash\npython3 /full/path/to/ip_port_cli.py "$@"' > /usr/local/bin/ip-port-modifer
+   echo -e '#!/bin/bash\npython3 /home/ssr147/dev/ip-port-modifer/ip_port_cli.py "$@"' | sudo tee /usr/local/bin/ip-port-modifer > /dev/null 
    chmod +x /usr/local/bin/ip-port-modifer
    ```
 
