@@ -1,4 +1,4 @@
-<h1 align="center">IP Port Modifier</h1>
+<h1 align="center">IP Port modifer</h1>
 
 <p align="center">
     A simple CLI and GUI tool to append custom ports to IP addresses from a .txt file.
@@ -34,8 +34,8 @@
 
 ### 1. Clone the repository
 ```bash
-git clone https://github.com/cahsun147/ip-port-modifier.git
-cd ip-port-modifier
+git clone https://github.com/cahsun147/ip-port-modifer.git
+cd ip-port-modifer
 ```
 
 ### 2. Install dependencies (required for GUI)
@@ -67,7 +67,7 @@ python3 ip_port_cli.py -i host.txt -o host_with_port.txt -p 8080
 #### Example:
 
 ```bash
-ip-port-modifier -i my_ips.txt -o result.txt -p 443
+ip-port-modifer -i my_ips.txt -o result.txt -p 443
 ```
 
 > To use this globally, see [🔧 Global CLI Setup](#-global-cli-setup)
@@ -113,28 +113,47 @@ Steps:
 
 ## 🔧 Global CLI Setup (Optional)
 
-If you want to use `ip-port-modifier` command globally from anywhere:
+If you want to use `ip-port-modifer` command globally from anywhere:
 
 1. Make a shell script (Linux/macOS):
 
    ```bash
-   echo -e '#!/bin/bash\npython3 /full/path/to/ip_port_cli.py "$@"' > /usr/local/bin/ip-port-modifier
-   chmod +x /usr/local/bin/ip-port-modifier
+   echo -e '#!/bin/bash\npython3 /full/path/to/ip_port_cli.py "$@"' > /usr/local/bin/ip-port-modifer
+   chmod +x /usr/local/bin/ip-port-modifer
    ```
 
 2. Now you can run:
 
    ```bash
-   ip-port-modifier -i host.txt -p 8080
+   ┌──(ssr147㉿hss)-[~/ip-port-modifer]
+   └─$ ip-port-modifer       
+
+
+         _                      _                   _ _  __         
+        (_)_ __   _ __  ___ _ _| |_   _ __  ___  __| (_)/ _|___ _ _ 
+        | | '_ \ | '_ \/ _ \ '_|  _| | '  \/ _ \/ _` | |  _/ -_) '_|
+        |_| .__/ | .__/\___/_|  \__| |_|_|_\___/\__,_|_|_| \___|_|  
+        |_|      |_|                                                
+
+                    📦 IP Port Modifier | CLI Version
+                        🛠 Made by Cahsun147 🛠
+    
+📄 Enter input file name (e.g., host.txt): /home/ssr147/cve/cv.txt
+🔌 Enter port to append (e.g., 8080): 8080
+💾 Enter output file name (e.g., host_with_port.txt): /home/ssr147/cve/host.txt
+
+✅ Successfully saved to: /home/ssr147/cve/host.txt
+
    ```
 
 > Replace `/full/path/to/` with the actual path to `ip_port_cli.py`.
 
 ---
 
-## 📜 License
+## 📝 License
 
-MIT License — Free to use and modify.
+Copyright © 2021 [Cahsun147](https://github.com/cahsun147). <br />
+This project is [MIT](https://github.com/cahsun147/ip-port-modifer?tab=MIT-1-ov-file#) licensed.
 
 ---
 
