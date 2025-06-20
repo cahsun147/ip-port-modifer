@@ -40,24 +40,24 @@ def on_convert():
 
 # GUI
 root = tk.Tk()
-root.title("IP Port Modifier | GUI Version - Made by Cahsun147")
+root.title("IP Port Modifer | GUI Version - Made by Cahsun147")
 root.geometry("500x300")
 root.configure(bg="#1a1a1a")
 root.resizable(False, False)
 
-# Style untuk efek bayangan dan sudut halus
+# Style for shadow effect and smooth corners
 style = {"bg": "#2c2c2c", "fg": "#ffffff", "relief": "flat", "bd": 0, "highlightthickness": 0, "insertbackground": "#ffffff"}
 shadow_style = {"bg": "#242424", "relief": "flat", "bd": 0, "highlightthickness": 0}
 
-# Frame utama dengan efek bayangan
+# Main frame with shadow effect
 main_frame = tk.Frame(root, bg="#242424", padx=5, pady=5)
 main_frame.pack(padx=1, pady=1, fill="both", expand=True)
 
-# Frame dalam untuk konten
+# Inner frame for content
 content_frame = tk.Frame(main_frame, bg="#2c2c2c", padx=10, pady=10)
 content_frame.pack(fill="both", expand=True, padx=3, pady=3)
 
-# Frame untuk Input File
+# Frame for Input File
 frame_input = tk.Frame(content_frame, bg="#2c2c2c")
 frame_input.pack(pady=5, fill="x")
 tk.Label(frame_input, text="Input File:", bg="#2c2c2c", fg="#ffffff", font=("Arial", 10, "bold")).pack(side="left")
@@ -65,14 +65,14 @@ entry_input = tk.Entry(frame_input, width=35, bg="#2c2c2c", fg="#ffffff", relief
 entry_input.pack(side="left", padx=5, expand=True, fill="x")
 tk.Button(frame_input, text="📂 Browse", command=select_input_file, bg="#3a3a3a", fg="#ffffff", font=("Arial", 8), padx=8, pady=3, relief="flat").pack(side="left")
 
-# Frame untuk Port
+# Frame for Port
 frame_port = tk.Frame(content_frame, bg="#2c2c2c")
 frame_port.pack(pady=5, fill="x")
 tk.Label(frame_port, text="Port to Append:", bg="#2c2c2c", fg="#ffffff", font=("Arial", 10, "bold")).pack(side="left")
 entry_port = tk.Entry(frame_port, width=20, bg="#2c2c2c", fg="#ffffff", relief="solid", bd=1, insertbackground="#ffffff", highlightthickness=1, highlightbackground="#ffffff")
 entry_port.pack(side="left", padx=5)
 
-# Frame untuk Output File
+# Frame for Output File
 frame_output = tk.Frame(content_frame, bg="#2c2c2c")
 frame_output.pack(pady=5, fill="x")
 tk.Label(frame_output, text="Output File:", bg="#2c2c2c", fg="#ffffff", font=("Arial", 10, "bold")).pack(side="left")
@@ -80,7 +80,7 @@ entry_output = tk.Entry(frame_output, width=35, bg="#2c2c2c", fg="#ffffff", reli
 entry_output.pack(side="left", padx=5, expand=True, fill="x")
 tk.Button(frame_output, text="💾 Save As", command=save_file, bg="#3a3a3a", fg="#ffffff", font=("Arial", 8), padx=8, pady=3, relief="flat").pack(side="left")
 
-# Tombol Convert & Save dengan efek hover
+# Convert & Save button with hover effect
 convert_button = tk.Button(content_frame, text="🚀 Convert & Save", command=on_convert, bg="#4CAF50", fg="white", font=("Arial", 10, "bold"), width=18, padx=8, pady=5, relief="flat")
 convert_button.pack(pady=10)
 
@@ -93,7 +93,7 @@ def on_leave(e):
 convert_button.bind("<Enter>", on_enter)
 convert_button.bind("<Leave>", on_leave)
 
-# Label Footer
+# Footer Label
 tk.Label(root, text="🛠 Made by Cahsun147", fg="#a0a0a0", bg="#1a1a1a", font=("Arial", 8)).pack(side="bottom", pady=5)
 
 root.mainloop()

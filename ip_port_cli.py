@@ -12,7 +12,7 @@ def banner():
         |_| .__/ | .__/\___/_|  \__| |_|_|_\___/\__,_|_|_| \___|_|  
         |_|      |_|                                                
 
-                    📦 IP Port Modifier | CLI Version
+                    📦 IP Port Modifer | CLI Version
                         🛠 Made by Cahsun147 🛠
     ''')
 
