@@ -1,8 +1,11 @@
-<h1 align="center">IP Port modifer</h1>
+<h1 align="center">IP Port modifer
+</h1>
 
 <p align="center">
     A simple CLI and GUI tool to append custom ports to IP addresses from a .txt file.
+    <img src="images/image.png"/>
 </p>
+
 
 <p align="center">
     <img src="https://img.shields.io/github/stars/cahsun147/ip-port-modifer">
@@ -138,11 +141,11 @@ If you want to use `ip-port-modifer` command globally from anywhere:
                     📦 IP Port Modifer | CLI Version
                         🛠 Made by Cahsun147 🛠
     
-📄 Enter input file name (e.g., host.txt): /home/ssr147/cve/cv.txt
-🔌 Enter port to append (e.g., 8080): 8080
-💾 Enter output file name (e.g., host_with_port.txt): /home/ssr147/cve/host.txt
+    📄 Enter input file name (e.g., host.txt): /home/ssr147/cve/cv.txt
+    🔌 Enter port to append (e.g., 8080): 8080
+    💾 Enter output file name (e.g., host_with_port.txt): /home/ssr147/cve/host.txt
 
-✅ Successfully saved to: /home/ssr147/cve/host.txt
+    ✅ Successfully saved to: /home/ssr147/cve/host.txt
 
    ```
 
